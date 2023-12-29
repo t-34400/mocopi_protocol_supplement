@@ -33,7 +33,7 @@ py mocopi_parser.py ./sample/sample_skdf.bin type=skdf # Parse skdf packet forma
 py mocopi_parser.py ./sample/sample_fram.bin type=fram # Parse fram packet format data
 ```
 
-### Mocopi Packet Sender(./MocopiSender)
+### [Mocopi Packet Sender for Unity](./MocopiSender)
 
 Unity module that sends the pose of models in the scene in the same format as the mocopi app.
 
