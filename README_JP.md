@@ -6,9 +6,20 @@ SonyのモーションキャプチャmocopiのUDP通信フォーマットの[非
 - mocopi-receiver-plugin-for-unity_1.0.5のサンプルページ
 
 ## 補足
+
+### データフォーマットについて
 - [`skdf`パケット](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md#skdf-packet-structure)については，記載の通り．
-- [`fram`パケット](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md#fram-packet-structure)については，最新バージョン(2023.12.29)では，`time`フィールドのあとに`uttm`という8byte（length, field nameも含めると16byte）のフィールドが必要
-  - UnixTimeをリトルエンディアンの浮動小数点として保存している模様，
+- [`fram`パケット](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md#fram-packet-structure)については，最新バージョン(2023.12.29)では，`time`フィールドのあとに`uttm`という8byte（length, field nameも含めると16byte）のフィールドが必要である
+  - UnixTimeをリトルエンディアンの浮動小数点として保存している模様.
   - [各SDKのバージョン情報](https://www.sony.net/Products/mocopi-dev/jp/downloads/DownloadInfo.html)からこのフィールドが必要か確認できる．
+- `tran`フィールドの座標系はY-Upの右手系である．
+  - Unityへの変換は以下のようになる．
+    ```
+    Position: (x,y,z) -> (-x,y,z)
+    Rotation: (x,y,z,w) -> (-x,y,z,-w)
+    ```
+
+### mocopi-receiver-plugin-for-unityの仕様について
+- mocopi-receiver-plugin-for-unityでは，パケットサイズから行う処理を決定しており，異なるサイズで送ると処理がスキップされる．
 
 ## サンプル
