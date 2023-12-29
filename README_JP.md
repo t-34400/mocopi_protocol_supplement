@@ -1,6 +1,6 @@
 # mocopi_protocol_supplement
 
-SonyのモーションキャプチャmocopiのUDP通信フォーマットの[非公式ドキュメント(seagetch/mcp-receiver)](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md#skdf-packet-structure)の補足資料とサンプルコード
+SonyのモーションキャプチャmocopiのUDP通信フォーマットの[非公式ドキュメント(seagetch/mcp-receiver)](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md)の補足資料とサンプルコード
 
 ## 仕様確認環境
 - mocopi-receiver-plugin-for-unity_1.0.5のサンプルシーン
