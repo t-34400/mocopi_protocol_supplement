@@ -1,1 +1,2 @@
-# mocopiパケットSender for Unity
+# Mocopi Packet Sender for Unity
+
