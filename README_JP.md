@@ -24,7 +24,7 @@ SonyのモーションキャプチャmocopiのUDP通信フォーマットの[非
 
 ## サンプルコード
 
-### [mocopiパケットParser](./parser)
+### [Mocopi Packet Parser](./parser)
 `skdf`, `fram`形式のバイナリファイルをパースしてログに表示するPythonサンプルコード．
 
 #### 使い方
@@ -33,7 +33,7 @@ py mocopi_parser.py ./sample/sample_skdf.bin type=skdf # Parse skdf packet forma
 py mocopi_parser.py ./sample/sample_fram.bin type=fram # Parse fram packet format data
 ```
 
-### [mocopiパケットSender](./MocopiSender)
+### [Mocopi Packet Sender](./MocopiSender)
 
 シーン上のモデルの姿勢をmocopiアプリと同じ形式で送信するUnityモジュール．
 
