@@ -23,3 +23,12 @@ SonyのモーションキャプチャmocopiのUDP通信フォーマットの[非
 - mocopi-receiver-plugin-for-unityでは，パケットサイズから行う処理を決定しており，異なるサイズで送ると処理がスキップされる．
 
 ## サンプル
+
+### [パケットパーサー](./parser)
+`skdf`, `fram`形式のバイナリファイルをパースするサンプルコード．
+
+#### 使い方
+```cmd
+py mocopi_parser.py ./sample/sample_skdf.bin type=skdf :: Parse skdf packet format data
+py mocopi_parser.py ./sample/sample_fram.bin type=fram :: Parse fram packet format data
+```
