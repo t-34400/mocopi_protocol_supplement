@@ -1,6 +1,6 @@
 # mocopi_protocol_supplement
 
-Supplementary documentation and sample code for the UDP communication format of Sony's motion capture mocopi, based on the [unofficial documentation (seagetch/mcp-receiver)](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md#skdf-packet-structure).
+Supplementary documentation and sample code for the UDP communication format of Sony's motion capture mocopi, based on the [unofficial documentation (seagetch/mcp-receiver)](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md).
 
 ## Verification Environment
 - Sample scene of mocopi-receiver-plugin-for-unity_1.0.5
