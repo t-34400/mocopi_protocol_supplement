@@ -12,7 +12,7 @@ Supplementary documentation and sample code for the UDP communication format of 
 - Regarding the [`skdf` packet](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md#skdf-packet-structure), it is as described.
 - For the [`fram` packet](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md#fram-packet-structure), as of the latest version (2023.12.29), an additional 8 bytes (`uttm`) field after the `time` field is required.
   - It appears to store Unix Time [sec] as a little-endian floating-point number.
-  - Confirm if this field is necessary from the [version information for each SDK](https://www.sony.net/Products/mocopi-dev/jp/downloads/DownloadInfo.html).
+  - Confirm if this field is necessary from the [version information for each SDK](https://www.sony.net/Products/mocopi-dev/en/downloads/DownloadInfo.html).
 - The coordinate system of the `tran` field is Y-Up right-handed.
   - The conversion to Unity is as follows:
     ```
