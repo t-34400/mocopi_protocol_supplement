@@ -3,6 +3,8 @@
 Supplementary documentation and sample code for the UDP communication format of Sony's motion capture mocopi, based on the [unofficial documentation (seagetch/mcp-receiver)](https://github.com/seagetch/mcp-receiver/blob/main/doc/Protocol.md). 
 (JP->[README_JP.md](./README_JP.md))
 
+The changes described in this repository have been submitted as [a pull request](https://github.com/seagetch/mcp-receiver/pull/1) to the original repository.
+
 ## Verification Environment
 - Sample scene of mocopi-receiver-plugin-for-unity_1.0.5
 
